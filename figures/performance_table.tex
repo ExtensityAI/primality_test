@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Method} & ${\bf n \approx 10^{6}}$ & ${\bf n \approx 10^{8}}$ & ${\bf n \approx 10^{9}}$ & ${\bf n \approx 10^{10}}$ & ${\bf n \approx 10^{12}}$ & ${\bf n \approx 10^{13}}$ & \textbf{Det.?} & \textbf{Theory} \\
+\hline
+Trial Div. & $2.23 \times 10^{-5}$ & $2.30 \times 10^{-4}$ & $2.30 \times 10^{-6}$ & $3.28 \times 10^{-3}$ & $3.25 \times 10^{-2}$ & $7.15 \times 10^{-6}$ & Yes & Exhaus. \\
+Opt. Trial Div. & $1.66 \times 10^{-5}$ & $1.54 \times 10^{-4}$ & ${\bf 7.15 \times 10^{-7}}$ & $2.28 \times 10^{-3}$ & $2.24 \times 10^{-2}$ & ${\bf 5.80 \times 10^{-6}}$ & Yes & Exhaus. \\
+Miller-Rabin (20) & $4.50 \times 10^{-5}$ & ${\bf 5.96 \times 10^{-5}}$ & $6.36 \times 10^{-6}$ & ${\bf 1.16 \times 10^{-4}}$ & ${\bf 1.17 \times 10^{-4}}$ & $1.06 \times 10^{-5}$ & No* & Fermat \\
+AKS & $2.82 \times 10^{-2}$ & $2.95 \times 10^{-2}$ & $2.04 \times 10^{-2}$ & $2.79 \times 10^{-2}$ & $2.46 \times 10^{-2}$ & $2.60 \times 10^{-2}$ & Yes & Poly. \\
+Our (Simpl.) & $5.10 \times 10^{-5}$ & $4.34 \times 10^{-4}$ & $2.50 \times 10^{-5}$ & $4.92 \times 10^{-3}$ & $4.85 \times 10^{-2}$ & $1.06 \times 10^{-2}$ & Yes & Approx. \\
+Our (Full) & ${\bf 6.60 \times 10^{-6}}$ & $1.18 \times 10^{-4}$ & $8.66 \times 10^{-6}$ & $1.30 \times 10^{-3}$ & $1.31 \times 10^{-2}$ & $3.53 \times 10^{-3}$ & Yes & Galois \\
+\hline
+\end{tabular}
+\caption{Comparative performance of primality testing algorithms (average of 3 runs). Bold values indicate fastest performance. Miller-Rabin (*) is probabilistic with high accuracy. Our Method (Full) leverages Galois theory for deterministic results.}
+\label{tab:performance}
+\end{table}
